@@ -1,3 +1,37 @@
-.caja1{
-  width: 20px;
+@import "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css";
+
+.card{
+  border:none;
+  outline: none;
+  background-color: rgba(118, 204, 38, 0.055);
+  border-radius: 20px;
+  transition: transform .3s;
+}
+
+.card:hover{
+  transform: translateY(-15px);
+  transition: transform .3s;
+}
+
+.text1{
+  font-size: 13px;
+  color: #cbcbcb;
+}
+
+.info{
+  line-height: 17px;
+}
+
+.star{
+  color: #fbc02c;
+}
+
+.cost span{
+  color: #fb3531;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.car{
+  color: #dc3545; 
 }

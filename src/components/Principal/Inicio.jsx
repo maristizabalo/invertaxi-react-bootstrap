@@ -1,23 +1,22 @@
 import React, { useEffect } from "react";
-import {gsap} from 'gsap';
+import { gsap } from "gsap";
 
 const Inicio = () => {
-  
   useEffect(() => {
-    const boton = document.querySelector('.background-amarillo')
+    const boton = document.querySelector(".background-amarillo");
     gsap.from(boton, {
       opacity: 0,
       y: -500,
-      duration: 3
-    })
-    const titulo1 = document.querySelectorAll('.titulo1')
+      duration: 3,
+    });
+    const titulo1 = document.querySelectorAll(".titulo1");
     gsap.from(titulo1, {
       opacity: 0,
       y: -500,
-      duration: 3
-    })
-  })
- 
+      duration: 3,
+    });
+  });
+
   return (
     <div className="row justify-content-center">
       <div
@@ -64,10 +63,14 @@ const Inicio = () => {
           <div className="carousel-item">
             <div className="row align-items-center text-center">
               <div className="col-6">
-                <img src="./img/svg.png" className="d-block w-100" alt="..." /* width="491px" height="491px" */ />
+                <img
+                  src="./img/svg.png"
+                  className="d-block w-100"
+                  alt="..." /* width="491px" height="491px" */
+                />
               </div>
               <div className="col-6">
-                <h2 className="h3 fw-bolder">CONDUCE CON NOSOTROS</h2>
+                <h2 className="h3 fw-bolder ">CONDUCE CON NOSOTROS</h2>
                 <h2 className="small d-none d-sm-none d-md-block">
                   ¿Estas en buscade empleo? No lo dudes mas y haz parte de
                   nuestro grupo selecto de conductores.
@@ -122,11 +125,127 @@ const Inicio = () => {
 
       {/* Seccion de vehiculos en venta */}
       <section>
-        <div class="card bg-dark text-white">
-          <img class="card-img" src="holder.js/100x180/" alt=""></img>
-          <div class="card-img-overlay">
-            <h4 class="card-title">Title</h4>
-            <p class="card-text">Text</p>
+        <div className="container mb-5 mt-5">
+          <div className="row">
+            {/* Card1 */}
+            <div className="col-md-4">
+              <div className="card mt-3 shadow">
+                <div className="car1 align-items-center p-2 text-center">
+                  <img
+                    src="./img/chevrolet_beat.png"
+                    alt=""
+                    className="rounded mb-3"
+                    width="150"
+                  />
+                  <h5>Chevrolet Beat</h5>
+
+                  {/* Card info */}
+                  <div className="mt-3 info">
+                    <span className="text1 d-block small">
+                      Lorem ipsum dolor sit amet
+                    </span>
+                    <span className="text1 small">Lorem, ipsum dolor.</span>
+                  </div>
+
+                  <div className="cost mt-3 text-dark">
+                    <span>$75 M</span>
+                    <div className="star mt-3 align-items-center">
+                      <i className="fa fa-star"></i>
+                      <i className="fa fa-star"></i>
+                      <i className="fa fa-star"></i>
+                      <i className="fa fa-star"></i>
+                      <i className="fa fa-star"></i>
+                    </div>
+                  </div>
+                  {/* Fin Card info */}
+                </div>
+                {/* Boton para cards */}
+                <div className="p-3 car text-center text-white mt-3 cursor">
+                <button type="button" className="btn btn-danger text-uppercase">Comprar</button>
+                </div>
+              </div>
+            </div>
+            {/* Final Card1 */}
+
+            {/* Card2 */}
+            <div className="col-md-4">
+              <div className="card mt-3 shadow">
+                <div className="car1 align-items-center p-2 text-center">
+                  <img
+                    src="./img/taxi_kia.png"
+                    alt=""
+                    className="rounded mb-3" 
+                    width="150"
+                  />
+                  <h5>KIA</h5>
+
+                  {/* Card info */}
+                  <div className="mt-3 info">
+                    <span className="text1 d-block small">
+                      Lorem ipsum dolor sit amet
+                    </span>
+                    <span className="text1 small">Lorem, ipsum dolor.</span>
+                  </div>
+
+                  <div className="cost mt-3 text-dark">
+                    <span>$75 M</span>
+                    <div className="star mt-3 align-items-center">
+                      <i className="fa fa-star"></i>
+                      <i className="fa fa-star"></i>
+                      <i className="fa fa-star"></i>
+                      <i className="fa fa-star"></i>
+                      <i className="fa fa-star"></i>
+                    </div>
+                  </div>
+                  {/* Fin Card info */}
+                </div>
+                {/* Boton para cards */}
+                <div className="p-3 car text-center text-white mt-3 cursor">
+                  <button type="button" className="btn btn-danger text-uppercase">Comprar</button>
+                </div>
+              </div>
+            </div>
+            {/* Final Card2 */}
+
+            {/* Card3 */}
+            <div className="col-md-4">
+              <div className="card mt-3 shadow">
+                <div className="car1 align-items-center p-2 text-center">
+                  <img
+                    src="./img/hyundai_i10.png"
+                    alt=""
+                    className="rounded mb-3"
+                    width="150"
+                  />
+                  <h5>Hyundai i10</h5>
+
+                  {/* Card info */}
+                  <div className="mt-3 info">
+                    <span className="text1 d-block small">
+                      Lorem ipsum dolor sit amet
+                    </span>
+                    <span className="text1 small">Lorem, ipsum dolor.</span>
+                  </div>
+
+                  <div className="cost mt-3 text-dark">
+                    <span>$75 M</span>
+                    <div className="star mt-3 align-items-center">
+                      <i className="fa fa-star"></i>
+                      <i className="fa fa-star"></i>
+                      <i className="fa fa-star"></i>
+                      <i className="fa fa-star"></i>
+                      <i className="fa fa-star"></i>
+                    </div>
+                  </div>
+                  {/* Fin Card info */}
+                </div>
+                {/* Boton para cards */}
+                <div className="p-3 car text-center text-white mt-3 cursor">
+                <button type="button" className="btn btn-danger text-uppercase">Comprar</button>
+                </div>
+              </div>
+            </div>
+            {/* Final Card3 */}
           </div>
         </div>
       </section>
